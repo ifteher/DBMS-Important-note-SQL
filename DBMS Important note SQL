@@ -1,0 +1,43 @@
+DBMS syntax sequence:
+
+Select
+From
+Where
+Order by
+Limit
+Offset
+
+
+Ex-1:Age onosare name dekhte caile:
+Order by(ascending,descending) এর ব্যাবহারঃ
+Select Name 
+from employee 
+order by Asc/Desc.
+
+Ex-2:ekta table e suru theke 60th thekee 10ta value dekhte cai.
+Limit,Offset এর ব্যাবহারঃ
+Select 
+From employee(table er name)
+Where 
+Limit 10(jototi dekhte cai seta)
+Offset 59(1st theke 59 ta ignore kore poroborti 10 dekhte caile)
+
+(limit 10,offset 59 er bodole:(Limit 59,10) evave ak line e likha jay.
+
+
+#IN,NOT IN,AS,LIKE AS এর ব্যাবহার:
+Where Roll=102
+or Roll=104
+or Roll=106
+বা,
+Where Roll IN(102,104,106)
+বা,
+where Roll NOT IN(102,104,106);
+
+#LIKE এর ব্যাবহার:
+Where Name LIKE'%Rahim%'( RAHIM karo name er part হিসেবে থাকলে সেটার সাথে মিল করবে। % diyee Rahim er pore aro kichu obosisto part ke bujahcce.)
+
+#AS এর ব্যাবহার:As
+diye rename er moto kore onno name poricito kora hoy:
+
+Select Name As StudentName;
